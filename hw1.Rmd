@@ -1,0 +1,78 @@
+---
+title: "Homework 1"
+author: '[Student Name]'
+date: "05-15-2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+```
+
+## Task 1a
+
+```{r}
+is_prime <- function() {
+  
+  # body of your function goes here...
+  
+}
+```
+
+## Task 1b
+
+```{r}
+is_anagram <- function() {
+  
+  # body of your function goes here...
+  
+}
+```
+
+## Task 2
+
+<i>
+Be sure to remove chunk option `eval=FALSE` in the below code chunks
+once you create your functions. Do not include this italicized
+text in your final submission.
+</i>
+
+#### Valid inputs: `is_prime()`
+
+```{r valid_inputs_1a, eval=FALSE}
+is_prime(x = 2)
+is_prime(x = 50)
+is_prime(x = 1000)
+is_prime(x = 13)
+```
+
+#### Invalid inputs: `is_prime()`
+
+```{r eval=FALSE, error=TRUE}
+is_prime(x = -2)
+is_prime(x = pi)
+is_prime(x = c(0, 10, 3))
+is_prime(x = "a")
+```
+
+#### Valid inputs: `is_anagram()`
+
+```{r eval=FALSE}
+is_anagram(x = "live", y = "evil")
+is_anagram(x = "apple", y = "grape")
+is_anagram(x = "a", y = "a")
+is_anagram(x = "plum", y = "lump")
+```
+
+#### Invalid inputs: `is_anagram()`
+
+```{r eval=FALSE, error=TRUE}
+is_anagram(x = "small", y = "big")
+is_anagram(x = 1, y = "one")
+is_anagram(x = "1", y = "1")
+is_anagram(x = "apple", "pal")
+```
+
+## Task 3
+
+Write-up goes here...
